@@ -8,14 +8,15 @@ var startTime = 0;
 var voltage = 0;
 var v_in = "P9_40";
 
-beagle.pinMode(v_in, beagle.OUTPUT);
+beagle.pinMode(v_in, beagle.INPUT, 'pulldown', 'fast');
 
 function callADC(){
   beagle.analogRead(v_in, readV);
 }
 
 function readV(x){
-  var value = x.value/547*4670;
+  console.log('Reading Voltage :' + x.value);
+  var value = x.value/557*(4670+557);
   voltage = value;
   console.log('Current Voltage :' + voltage);
 }
