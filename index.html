@@ -204,7 +204,7 @@ function exportTableToCSV(filename) {
     downloadCSV(csv.join("\n"), filename);
 }
 
-var socket = io.connect('http://localhost:8080');
+var socket = io.connect('http://192.168.7.2:2020');
 
 
 socket.on('data', function(data) {
