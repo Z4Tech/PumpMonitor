@@ -6,9 +6,12 @@ var loop;
 var d;
 var startTime = 0;
 var voltage = 0;
+var v_in = "P9_40";
+
+beagle.pinMode(v_in, beagle.OUTPUT);
 
 function callADC(){
-  beagle.analogRead(P9_40, readV);
+  beagle.analogRead(v_in, readV);
 }
 
 function readV(x){
