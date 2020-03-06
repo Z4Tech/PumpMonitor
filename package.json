@@ -1,0 +1,16 @@
+{
+  "name": "pumpmonitor",
+  "version": "1.0.0",
+  "description": "Simple pressure2voltage monitoring with BBGW",
+  "main": "app.js",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
